@@ -5,7 +5,7 @@ number = random.randint(-10000, 10000)
 if number > 0:
     ldig = number % 10
 else:
-    ldig = (number * -1) % 10
+    ldig = number % -10
 
 if ldig > 5:
     ifel = "and is greater than 5"
