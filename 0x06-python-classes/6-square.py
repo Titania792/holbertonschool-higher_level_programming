@@ -9,8 +9,8 @@ class Square:
     """Creating/defining Square class"""
     def __init__(self, size=0, position=(0, 0)):
         """Initializes the class with the proper characteristics"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         return (self.__size ** 2)
@@ -49,8 +49,4 @@ class Square:
                 for i in range(self.__position[1]):
                     print("")
             for j in range(self.__size):
-                for x in range(self.__position[0]):
-                    print(' ', end="")
-                for i in range(self.__size):
-                    print("#", end="")
-                print("")
+                print(" " * self.__position[0] + "#" * self.__size)
