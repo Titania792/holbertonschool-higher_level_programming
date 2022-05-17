@@ -38,7 +38,7 @@ class Square:
                 size[0] < 0 or size[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = size
+            self.__position = value
 
     def my_print(self):
         if self.__size == 0:
