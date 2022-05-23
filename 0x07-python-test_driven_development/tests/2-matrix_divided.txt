@@ -52,4 +52,3 @@ case 7:
 >>> matrix_divided([["Tati", 4, 6],[8, 10, 12]], 2)
 Traceback (most recent call last):
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
-
