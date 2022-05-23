@@ -1,4 +1,14 @@
-Returns a + b
+============================================
+            Test 0 - add integer
+============================================
+
+"""This test works for the function add_integer,
+to bring that function the first thing we need
+to do is import 0-add_integer"""
+ 
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
  >>>add_integer(2, 3)
  5
  >>>add_integer(2, 3, 4)
