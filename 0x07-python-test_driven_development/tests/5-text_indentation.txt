@@ -1,0 +1,48 @@
+============================================
+            Test 4 - text
+============================================
+
+"""This test works for the function text_indentation,
+to bring that function the first thing we need
+to do is import 5-text_indentation"""
+ 
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+case 1:
+
+>>> text_indentation(5)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+case 2:
+
+>>> text_indentation(a)
+Traceback (most recent call last):
+NameError: name 'a' is not defined
+
+case 3:
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+case 4:
+
+>>> text_indentation("""Ése es el misterio, ¿No? ¿El laberinto es vivir o \
+... morir? ¿De cuál está tratando de escapar, del mundo o del final del \
+... mundo? Te pasas toda la vida encerrado en el laberinto pensando en como \
+... vas a escapar de ahí y lo fabuloso que será. Imaginar ese futuro te \
+... mantiene con vida, pero nunca escapas. Solo utilizas el futuro para \
+... escapar del presente""")
+...
+Ése es el misterio, ¿No?
+<BLANKLINE>
+¿El laberinto es vivir o morir?
+<BLANKLINE>
+¿De cuál está tratando de escapar, del mundo o del final del mundo?
+<BLANKLINE>
+Te pasas toda la vida encerrado en el laberinto pensando en como vas a escapar de ahí y lo fabuloso que será.
+<BLANKLINE>
+Imaginar ese futuro te mantiene con vida, pero nunca escapas.
+<BLANKLINE>
+Solo utilizas el futuro para escapar del presente
