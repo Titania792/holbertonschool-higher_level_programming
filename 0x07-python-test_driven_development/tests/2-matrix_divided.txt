@@ -52,3 +52,15 @@ case 7:
 >>> matrix_divided([["Tati", 4, 6],[8, 10, 12]], 2)
 Traceback (most recent call last):
 TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+case 8:
+
+>>> matrix_divided([[2, 4, 6],[8, 10, 12]], None)
+Traceback (most recent call last):
+TypeError: div must be a number
+
+case 9:
+
+>>> matrix_divided(None, 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
