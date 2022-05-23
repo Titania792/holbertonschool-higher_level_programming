@@ -8,30 +8,56 @@ to do is import 0-add_integer"""
  
 >>> add_integer = __import__('0-add_integer').add_integer
 
+case 1:
 
- >>>add_integer(2, 3)
- 5
- >>>add_integer(2, 3, 4)
- too much
- >>>add_integer(2, a)
- b is not an int/float char case
- >>>add_integer(a, 3)
- a is not an int/float char case
- >>>add_integer(3)
- few arguments
- >>>add_integer(3, 6**234567890)
- aiuda
- >>>add_integer(3, 5j)
- no se pero vas mal
- >>>add_integer(3, "adasa")
- b is not an int/float string case
- >>>add_integer(2, -3)
- -1
- >>>add_integer(3, 3.4)
- 6
- >>>add_integer(2+3, 2+3)
- 10 o no, quien sabe
- >>>add_integer(0, 0)
- 0
- >>>add_integer(0, 7)
- 7
+>>> add_integer(5000, -500)
+4500
+
+case 2:
+
+>>> add_integer(2, 3)
+5
+ 
+case 3:
+
+>>> add_integer(7.3, 10)
+17
+
+case 4:
+
+>>> add_integer(4563, 3214)
+7777
+
+case 5:
+
+>>> add_integer(5*5, 6/2)
+28
+
+case 6:
+
+>>> add_integer(2, 3, 4)
+Traceback (most recent call last):
+TypeErrror: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+case 7:
+
+>>> add_integer("Tati", 20)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+case 8:
+
+>>> add_integer(19, "Tati")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+case 9:
+
+>>> add_integer("", "")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+case 10:
+
+>>> add_integer((7))
+105
