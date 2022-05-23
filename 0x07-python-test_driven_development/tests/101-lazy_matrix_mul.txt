@@ -1,0 +1,20 @@
+============================================
+            Test 5 - Numpy
+============================================
+
+"""This test works for the function lazy_matrix_mul,
+to bring that function the first thing we need
+to do is import 101-lazy_matrix_mul"""
+
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+case 1:
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+[[ 7 10]
+ [15 22]]
+
+case 2:
+
+>>> lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]])
+[[13 16]]
