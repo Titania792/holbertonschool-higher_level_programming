@@ -5,3 +5,4 @@
 class LockedClass:
     """bbbbb"""
     __slots__ = "first_name"
+
