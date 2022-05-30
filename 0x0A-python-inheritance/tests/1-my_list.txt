@@ -1,0 +1,13 @@
+============================================
+            Test 1 - my_list
+============================================
+
+"""This test works for the function ,MyList
+to bring that function the first thing we need
+to do is import 1-my_list.py"""
+ 
+>>> MyList = __import__('1-my_list').MyList
+
+case 1:
+
+>>> MyList()
