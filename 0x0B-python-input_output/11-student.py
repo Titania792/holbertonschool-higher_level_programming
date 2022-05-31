@@ -18,7 +18,7 @@ class Student:
         if attrs is not None:
             return {key: value for key, value in
                     self.__dict__.items() if key in attrs}
-        
+
         return self.__dict__
 
     def reload_from_json(self, json):
