@@ -75,4 +75,41 @@ class Rectangle(Base):
 
     def __str__(self):
         """returns string"""
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -\
+ {self.__width}/{self.__height}")
+
+    def update(self, *args, **kwargs):
+        """update rectangle"""
+        if args is not None and len(args) != 0:
+            i = 0
+            for arg in args:
+                if i == 0:
+                    self.id = arg
+                elif i == 1:
+                    self.__width = arg
+                elif i == 2:
+                    self.__height = arg
+                elif i == 3:
+                    self.__x = arg
+                elif i == 4:
+                    self.__y = arg
+                i += 1
+        else:
+            if kwargs is not None and len(kwargs) != 0:
+                for key, value in kwargs.items():
+                    """print(f"{key}:{value}")"""
+                    if key == "id":
+                        self.id = value
+                    elif key == "width":
+                        self.width = value
+                    elif key == "height":
+                        self.height = value
+                    elif key == "x":
+                        self.x = value
+                    elif key == "y":
+                        self.y = value
+
+    def to_dictionary(self):
+        """return dictionary"""
+        return {'id': self.id, 'width': self.width, 'height':
+                self.height, 'x': self.x, 'y': self.y}
