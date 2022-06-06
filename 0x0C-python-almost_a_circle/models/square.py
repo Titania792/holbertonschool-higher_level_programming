@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ square.py """
 
+
 from models.rectangle import Rectangle
 
 
@@ -17,6 +18,7 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """ return size """
         return self.height
 
     @size.setter

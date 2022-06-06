@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ rectangle.py """
 
+
 from models.base import Base
 
 
@@ -17,10 +18,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """return height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """setter"""
         if type(value) != int:
             raise TypeError("height must be an integer")
         elif value <= 0:
@@ -29,10 +32,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """return width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter"""
         if type(value) != int:
             raise TypeError("width must be an integer")
         elif value <= 0:
@@ -41,10 +46,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """return x"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """setter"""
         if type(value) != int:
             raise TypeError("x must be an integer")
         elif value < 0:
@@ -53,10 +60,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """return y"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """setter"""
         if type(value) != int:
             raise TypeError("y must be an integer")
         elif value < 0:
@@ -64,6 +73,7 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """return area"""
         return self.__width * self.__height
 
     def display(self):
