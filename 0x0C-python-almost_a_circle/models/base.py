@@ -45,9 +45,42 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
-        pass
+        if cls.__name__ == "Square":
+            dummy = cls(1)
+        elif cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        dummy.update(**dictionary)
+        return dummy
 
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
-        pass
+        try:
+            with open(cls.__name__ + ".json", "r") as f:
+                return [cls.create(**d) for d in cls.from_json_string(f.read())]
+        except FileNotFoundError:
+            return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """opens a window and draws all the Rectangles and Squares"""
+        from turtle import Turtle, Screen
+        screen = Screen()
+        t = Turtle()
+        list_rectangles.extend(list_squares)
+        for rectangle in list_rectangles:
+            t.penup()
+            t.goto(rectangle.x, rectangle.y)
+            t.pendown()
+            t.color("blue")
+            t.begin_fill()
+            t.forward(rectangle.width)
+            t.left(90)
+            t.forward(rectangle.height)
+            t.left(90)
+            t.forward(rectangle.width)
+            t.left(90)
+            t.forward(rectangle.height)
+            t.end_fill()
+        t.hideturtle()
+        screen.exitonclick()
