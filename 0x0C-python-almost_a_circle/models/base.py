@@ -31,7 +31,8 @@ class Base:
                 f.write(cls.to_json_string(None))
         else:
             with open(cls.__name__ + ".json", "w") as f:
-                f.write(cls.to_json_string([obj.to_dictionary() for obj in list_objs]))
+                f.write(cls.to_json_string([obj.to_dictionary()
+                                            for obj in list_objs]))
 
     @staticmethod
     def from_json_string(json_string):
