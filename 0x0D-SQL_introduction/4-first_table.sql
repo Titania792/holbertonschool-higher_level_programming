@@ -7,6 +7,6 @@
 -- You are not allowed to use the SELECT or SHOW statements
 CREATE TABLE IF NOT EXISTS first_table
 (
-  col1 VARCHAR(256) name
-  col2 INT id
+  name VARCHAR(256),
+  id INT
 );
