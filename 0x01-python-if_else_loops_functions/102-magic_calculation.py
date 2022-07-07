@@ -2,5 +2,7 @@
 def magic_calculation(a, b, c):
     if a < b:
         return c
-    else:
+    elif c > b:
         return a + b
+    else:
+        return a * b - c
