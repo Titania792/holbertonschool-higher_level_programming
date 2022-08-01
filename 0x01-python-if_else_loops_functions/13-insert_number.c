@@ -7,25 +7,40 @@
  *
  * Return: linked list with the new node
  */
-* /
-    listint_t *insert_node(listint_t **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
-    listint_t *new_node;
-    listint_t *temp;
+	listint_t *new, *aux;
+	int flag = 0;
 
-    new_node = malloc(sizeof(listint_t));
-    if (new_node == NULL)
-        return (NULL);
-    new_node->n = number;
-    new_node->next = NULL;
-    if (*head == NULL)
-    {
-        *head = new_node;
-        return (new_node);
-    }
-    temp = *head;
-    while (temp->next != NULL)
-        temp = temp->next;
-    temp->next = new_node;
-    return (new_node);
+	new = malloc(sizeof(listint_t));
+	if (!new)
+		return (NULL);
+	new->n = number;
+	aux = *head;
+	if (!*head || !head)
+	{
+		new->next = NULL;
+		(*head) = new;
+		return (*head);
+	}
+	while (aux->next != NULL)
+	{
+		if (number < (*head)->n)
+		{
+			flag = 1;
+			break;
+		}
+		else if (number < aux->next->n)
+			break;
+		aux = aux->next;
+	}
+	new->next = aux->next;
+	if (flag == 1)
+	{
+		(*head) = new;
+		new->next = aux;
+	}
+	else
+		aux->next = new;
+	return (*head);
 }
