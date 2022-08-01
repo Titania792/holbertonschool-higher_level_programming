@@ -1,3 +1,4 @@
-const myVar = 'JavaScript is amazing' // string
+#!/usr/bin/node
+const myVar = 'JavaScript is amazing'; // string
 
-console.log(myVar) // console.log(myVar) will print 'JavaScript is amazing'
+console.log(myVar); // console.log(myVar) will print 'JavaScript is amazing'
