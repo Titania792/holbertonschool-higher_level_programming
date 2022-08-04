@@ -10,10 +10,9 @@ cursor = con.cursor()
 # cursor is a cursor object that is used to traverse the result set of a query
 cursor.execute("SELECT * FROM states ORDER BY id ASC")
 # execute() executes a SQL statement and returns the number of rows affected if successful
-cursor.fetchall()
+rows = cursor.fetchall()
 # fetchall() returns all rows from a query
-con.commit()
-# commit() is used to save the changes made to the database
-# # commit() commits the current transaction to the database and if the commit fails, the transaction is rolled back
+for row in rows:
+    print(row)
 con.close()
 # close() is used to close the connection to the database
