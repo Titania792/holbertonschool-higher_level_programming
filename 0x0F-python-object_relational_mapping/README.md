@@ -26,7 +26,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-    File:  [`0-select_states.py`]()
+	-    File:  [`0-select_states.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/0-select_states.py)
 
 ### 1. Filter states
 - Write a script that lists all  `states`  with a  `name`  starting with  `N`  (upper N) from the database  `hbtn_0e_0_usa`:
@@ -36,7 +36,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File: [`1-filter_states.py`]()
+	-   File: [`1-filter_states.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/1-filter_states.py)
 
 ### 2. Filter states by user input
 - Write a script that takes in an argument and displays all values in the  `states`  table of  `hbtn_0e_0_usa`  where  `name`  matches the argument.
@@ -47,7 +47,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`2-my_filter_states.py`]()
+	-   File:  [`2-my_filter_states.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/2-my_filter_states.py)
 
 ### 3. SQL Injection...
 - Write a script that takes in arguments and displays all values in the  `states`  table of  `hbtn_0e_0_usa`  where  `name`  matches the argument. But this time, write one that is safe from MySQL injections!
@@ -57,7 +57,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`3-my_safe_filter_states.py`]()
+	-   File:  [`3-my_safe_filter_states.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py)
 
 ### 4. Cities by states
 - Write a script that lists all  `cities`  from the database  `hbtn_0e_4_usa`
@@ -68,7 +68,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   You can use only  `execute()`  once
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`4-cities_by_state.py`]()
+	-   File:  [`4-cities_by_state.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/4-cities_by_state.py)
 
 ### 5. All cities by state
 - Write a script that takes in the name of a state as an argument and lists all  `cities`  of that state, using the database  `hbtn_0e_4_usa`
@@ -79,7 +79,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   You can use only  `execute()`  once
 	-   The results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`5-filter_cities.py`]()
+	-   File:  [`5-filter_cities.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/5-filter_cities.py)
 
 ### 6. First state model
 - Write a python file that contains the class definition of a  `State`  and an instance  `Base = declarative_base()`:
@@ -91,7 +91,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   You must use the module  `SQLAlchemy`
 	-   Your script should connect to a MySQL server running on  `localhost`  at port  `3306`
 	-   **WARNING:**  all classes who inherit from  `Base`  **must**  be imported before calling  `Base.metadata.create_all(engine)`
-	-   File:  [`model_state.py`]()
+	-   File:  [`model_state.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_state.py)
 
 ### 7. All states via SQLAlchemy
 - Write a script that lists all  `State`  objects from the database  `hbtn_0e_6_usa`
@@ -102,7 +102,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   The results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`7-model_state_fetch_all.py`]()
+	-   File:  [`7-model_state_fetch_all.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py)
 
 ### 8. First state
 - Write a script that prints the first  `State`  object from the database  `hbtn_0e_6_usa`
@@ -115,7 +115,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   The results must be displayed as they are in the example below
 	-   If the table  `states`  is empty, print  `Nothing`  followed by a new line
 	-   Your code should not be executed when imported
-	-   File:  [`8-model_state_fetch_first.py`]()
+	-   File:  [`8-model_state_fetch_first.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/8-model_state_fetch_first.py)
 
 ### 9. Contains `a`
 - Write a script that lists all  `State`  objects that contain the letter  `a`  from the database  `hbtn_0e_6_usa`
@@ -126,7 +126,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`
 	-   The results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`9-model_state_filter_a.py`]()
+	-   File:  [`9-model_state_filter_a.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/9-model_state_filter_a.py)
 
 ### 10. Get a state
 - Write a script that prints the  `State`  object with the  `name`  passed as argument from the database  `hbtn_0e_6_usa`
@@ -138,7 +138,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must display the  `states.id`
 	-   If no state has the name you searched for, display  `Not found`
 	-   Your code should not be executed when imported
-	-   File:  [`10-model_state_my_get.py`]()
+	-   File:  [`10-model_state_my_get.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/10-model_state_my_get.py)
 
 ### 11. Add a new state
 - Write a script that adds the  `State`  object “Louisiana” to the database  `hbtn_0e_6_usa`
@@ -148,7 +148,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Your script should connect to a MySQL server running on  `localhost`  at port  `3306`
 	-   Print the new  `states.id`  after creation
 	-   Your code should not be executed when imported
-	-   File:  [`11-model_state_insert.py`]()
+	-   File:  [`11-model_state_insert.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/11-model_state_insert.py)
 
 
 ### 12. Update a state
@@ -159,7 +159,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Your script should connect to a MySQL server running on  `localhost`  at port  `3306`
 	-   Change the name of the  `State`  where  `id = 2`  to  `New Mexico`
 	-   Your code should not be executed when imported
-	-   File:  [`12-model_state_update_id_2.py`]()
+	-   File:  [`12-model_state_update_id_2.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/12-model_state_update_id_2.py)
 
 ### 13. Delete states
 - Write a script that deletes all  `State`  objects with a name containing the letter  `a`  from the database  `hbtn_0e_6_usa`
@@ -168,7 +168,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   You must import  `State`  and  `Base`  from  `model_state`  -  `from model_state import Base, State`
 	-   Your script should connect to a MySQL server running on  `localhost`  at port  `3306`
 	-   Your code should not be executed when imported
-	-   File:  [`13-model_state_delete_a.py`]()
+	-   File:  [`13-model_state_delete_a.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/13-model_state_delete_a.py)
 
 ### 14. Cities in state
 - Write a Python file similar to  `model_state.py`  named  `model_city.py`  that contains the class definition of a  `City`.
@@ -187,7 +187,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `cities.id`
 	-   Results must be display as they are in the example below (`<state name>: (<city id>) <city name>`)
 	-   Your code should not be executed when imported
-	-   File:  [`model_city.py`](), [`14-model_city_fetch_by_state.py`]()
+	-   File:  [`model_city.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/model_city.py), [`14-model_city_fetch_by_state.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py)
 
 ### 15. City relationship
 - Improve the files  `model_city.py`  and  `model_state.py`, and save them as  `relationship_city.py`  and  `relationship_state.py`:
@@ -202,7 +202,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Your script should connect to a MySQL server running on  `localhost`  at port  `3306`
 	-   You must use the  `cities`  relationship for all  `State`  objects
 	-   Your code should not be executed when imported
-	-   File: [`relationship_city.py`](), [`relationship_state.py`](), [`100-relationship_states_cities.py`]()
+	-   File: [`relationship_city.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_city.py), [`relationship_state.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/relationship_state.py), [`100-relationship_states_cities.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/100-relationship_states_cities.py)
 
 ### 16. List relationship
 - Write a script that lists all  `State`  objects, and corresponding  `City`  objects, contained in the database  `hbtn_0e_101_usa`
@@ -214,7 +214,7 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `states.id`  and  `cities.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File: [`101-relationship_states_cities_list.py`]()
+	-   File: [`101-relationship_states_cities_list.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/101-relationship_states_cities_list.py)
 
 ### 17. From city
 - Write a script that lists all  `City`  objects from the database  `hbtn_0e_101_usa`
@@ -226,4 +226,4 @@ The biggest difference is: no more SQL queries! Indeed, the purpose of an ORM is
 	-   Results must be sorted in ascending order by  `cities.id`
 	-   Results must be displayed as they are in the example below
 	-   Your code should not be executed when imported
-	-   File:  [`102-relationship_cities_states_list.py`]()
+	-   File:  [`102-relationship_cities_states_list.py`](https://github.com/Titania792/holbertonschool-higher_level_programming/blob/main/0x0F-python-object_relational_mapping/102-relationship_cities_states_list.py)
