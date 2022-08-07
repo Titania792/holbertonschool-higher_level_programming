@@ -6,13 +6,18 @@ import sys
 if __name__ == "__main__":
     con = MySQLdb.connect(host='localhost', port=3306,
                           user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    # con is a connection object that represents the database connection and is used to execute SQL statements
+    # con is a connection object that represents the database connection and is
+    # used to execute SQL statements
     cursor = con.cursor()
-    # cursor is a cursor object that is used to traverse the result set of a query
+    # cursor is a cursor object that is used to traverse the result
+    # set of a query
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(sys.argv[4]))
-    # execute() executes a SQL statement and returns the number of rows affected if successful
-    # LIKE is a case-sensitive comparison operator that matches patterns against strings.
+        "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER \
+        BY id ASC".format(sys.argv[4]))
+    # execute() executes a SQL statement and returns the number of
+    # rows affected if successful
+    # LIKE is a case-sensitive comparison operator that matches
+    # patterns against strings.
     # BINARY is a modifier that forces the comparison to be case-sensitive.
     rows = cursor.fetchall()
     # fetchall() returns all rows from a query
