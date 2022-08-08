@@ -7,12 +7,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from relationship_state import State, Base
 from sqlalchemy.orm import relationship
 
-Base = declarative_base()
-
 
 class City(Base):
     """ This class represents a city in the database """
     __tablename__ = "cities"
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey("states.id"), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
